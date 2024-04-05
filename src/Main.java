@@ -2,11 +2,14 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-
+        Wallet w1=new Wallet("Кошелек1 с ",1000);
+        String s1 = w1.toString();
+        System.out.println(w1);
     }
 }
 class Wallet {
     private double money;
+    private String name;
 
 
     public double getMoney() {
@@ -14,7 +17,8 @@ class Wallet {
         return money;
     }
 
-    public Plane(double money) {
+    public Wallet(String name,double money) {
+        this.name = name;
         this.money = money;
     }
 
